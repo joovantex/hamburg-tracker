@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "hamburg-tracker",
+  "version": "${version}",
+  "name": "Hamburg Tracker",
+  "description": "Sendet Spielerpositionen und Blockänderungen live per HTTP an die Hamburg-Bau-Website.",
+  "environment": "server",
+  "entrypoints": { "main": ["de.hamburg.Tracker"] },
+  "mixins": ["hamburg.mixins.json"],
+  "depends": { "fabricloader": ">=0.18.1", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
